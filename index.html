@@ -12,13 +12,20 @@
 				width: 100%;
 				height: 100%;
 				overflow: hidden;
+				text-align: center;
+			}
+
+			#canvas {
+				margin-top: 20px;
 			}
 		</style>
 	</head>
 
-	<body onload="init();">
-		<canvas id="canvas" width="400" height="300"></canvas>
+	<body onload="requestAnimationFrame(draw);">
+		<canvas id="canvas" width="1050" height="800"></canvas>
 
-		<script src="main.js"></script>
+		<div id="debug"></div>
+
+		<script src="clock.js"></script>
 	</body>
 </html>
